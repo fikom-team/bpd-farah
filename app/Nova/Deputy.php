@@ -5,24 +5,25 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class ProgramTarget extends Resource
+class Deputy extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\ProgramTarget::class;
+    public static $model = \App\Deputy::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'kode';
+    public static $title = 'id';
 
     /**
      * The columns that should be searched.
@@ -31,7 +32,6 @@ class ProgramTarget extends Resource
      */
     public static $search = [
         'id',
-        'kode',
     ];
 
     /**
@@ -43,13 +43,18 @@ class ProgramTarget extends Resource
     public function fields(Request $request)
     {
         return [
+            BelongsTo::make('Program Target', 'programTarget', ProgramTarget::class),
 
-            BelongsTo::make('Sasaran Strategis', 'strategicTarget', StrategicTarget::class),
-
-            Text::make('Kode', 'kode')
+            Text::make('Kode IKP', 'kode_ikp')
                 ->rules('required', 'string'),
 
-            Text::make('name')
+            Text::make('Nama', 'name')
+                ->rules('required', 'string'),
+
+            Markdown::make('Deskripsi', 'desc')
+                ->rules('required', 'string'),
+
+            Text::make('Target', 'target')
                 ->rules('required', 'string'),
         ];
     }

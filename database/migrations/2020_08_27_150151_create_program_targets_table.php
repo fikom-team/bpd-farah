@@ -16,6 +16,7 @@ class CreateProgramTargetsTable extends Migration
         Schema::create('program_targets', function (Blueprint $table) {
             $table->id();
             $table->foreignId('strategic_target_id');
+            $table->string('kode');
             $table->string('name');
             $table->timestamps();
         });
