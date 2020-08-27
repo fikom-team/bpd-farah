@@ -1,5 +1,6 @@
 <?php
 
+use App\StrategicTarget;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::get('test', function () {
+    $ss = new StrategicTarget();
+    return $ss->with('ministrys')->get();
 });
