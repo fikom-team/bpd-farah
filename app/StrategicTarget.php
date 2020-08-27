@@ -12,8 +12,17 @@ class StrategicTarget extends Model
      * 
      * @return HasMany
      */
-    public function ministrys() : HasMany
+    public function ministrys(): HasMany
     {
-        return $this->hasMany(Ministry::class , 'strategic_target_id');
+        return $this->hasMany(Ministry::class, 'strategic_target_id');
+    }
+    /**
+     * Sasaran Target Dapat memiliki Banyak Content Kementrian
+     * 
+     * @return HasMany
+     */
+    public function programTargets(): HasMany
+    {
+        return $this->hasMany(ProgramTarget::class, 'strategic_target_id');
     }
 }
