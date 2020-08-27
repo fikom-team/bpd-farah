@@ -15,6 +15,7 @@ class CreateStrategicTargetsTable extends Migration
     {
         Schema::create('strategic_targets', function (Blueprint $table) {
             $table->id();
+            $table->string('kode');
             $table->string('name');
             $table->timestamps();
         });
