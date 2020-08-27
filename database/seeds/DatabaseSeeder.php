@@ -1,6 +1,5 @@
 <?php
 
-use App\Ministry;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -15,5 +14,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         $this->call(StrategicTargetSeeder::class);
         $this->call(MinistrySeeder::class);
+        $this->call(ProgramTargetSeeder::class);
+        $this->call(DeputySeeder::class);
     }
 }
