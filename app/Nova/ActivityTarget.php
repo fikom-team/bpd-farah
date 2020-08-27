@@ -4,19 +4,18 @@ namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
-use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class ProgramTarget extends Resource
+class ActivityTarget extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\ProgramTarget::class;
+    public static $model = \App\ActivityTarget::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -45,15 +44,13 @@ class ProgramTarget extends Resource
     {
         return [
 
-            BelongsTo::make('Sasaran Strategis', 'strategicTarget', StrategicTarget::class),
+            BelongsTo::make('Sasaran Program' , 'programTarget' , ProgramTarget::class),
 
-            Text::make('Kode', 'kode')
-                ->rules('required', 'string'),
+            Text::make('Kode','kode_sk')
+                ->rules('required','string'),
 
-            Text::make('name')
-                ->rules('required', 'string'),
-
-            HasMany::make('Sasaran Kegiatan' , 'activityTargets' , ActivityTarget::class) 
+            Text::make('Name', 'name')
+                ->rules('required', 'string')
         ];
     }
 
