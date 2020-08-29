@@ -18,8 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('test', function () {
-    $ss = new StrategicTarget();
-    return $ss->with('ministrys')->get();
+Route::fallback(function () {
+    return view('welcome');
 });
