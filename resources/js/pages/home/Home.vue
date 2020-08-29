@@ -12,6 +12,9 @@
 import Card from "../../components/molecules/Card";
 import LayoutCard from "../../utils/Layout-card";
 import CardGrids from "../../utils/Card-grids";
+
+import Axios from 'axios';
+
 export default {
   name: "Home",
   components: {
@@ -53,8 +56,6 @@ export default {
       },
     ],
   }),
-  methods: {},
-  mounted() {},
 };
 </script>
 
