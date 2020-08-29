@@ -105,4 +105,9 @@ class StrategicTarget extends Resource
     {
         return 'Sasaran Strategis';
     }
+
+    public static function singularLabel()
+    {
+        return 'Sasaran Strategis'; 
+    }
 }
