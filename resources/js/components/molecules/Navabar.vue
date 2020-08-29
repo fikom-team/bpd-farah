@@ -11,7 +11,7 @@
       </div>
       <div class="hidden sm:flex lg:flex avatar p-1 mr-2">
         <span
-          class="text-gray-800 bg-white rounded-full h-12 w-12 flex items-center justify-center"
+          class="text-gray-800 bg-white rounded-full h-10 w-10 flex items-center justify-center"
         >
           <img
             src="https://avatars2.githubusercontent.com/u/23658759?s=460&u=282d8a9ebcb3cb461a16574d233ef777d7f27b9d&v=4"
@@ -67,11 +67,11 @@ export default {
 
 .avatar > span > img {
   @apply rounded-full;
-  @apply w-12;
-  @apply h-12;
+  @apply w-10;
+  @apply h-10;
   @apply border-gray-100;
-  @apply border-2;
-  @apply border-solid;
   @apply shadow-md;
+  @apply border-2;
+  @apply border-separate
 }
 </style>

@@ -6991,7 +6991,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".links {\n  cursor: pointer;\n  font-weight: 700;\n  --text-opacity: 1;\n  color: #cbd5e0;\n  color: rgba(203, 213, 224, var(--text-opacity));\n  border-radius: 0.25rem;\n  padding: 0.5rem;\n  letter-spacing: 0.025em;\n  text-align: center;\n}\n.links:hover {\n  --text-opacity: 1;\n  color: #fff;\n  color: rgba(255, 255, 255, var(--text-opacity));\n  --bg-opacity: 1;\n  background-color: #a0aec0;\n  background-color: rgba(160, 174, 192, var(--bg-opacity));\n  border-radius: 0.25rem;\n  margin-bottom: 0.5rem;\n  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\n}\n.logo {\n  margin-left: 1.25rem;\n  margin-right: 1.25rem;\n  margin-bottom: 0.25rem;\n}\n.logo > img {\n  width: 3rem;\n  height: 3rem;\n  border-radius: 9999px;\n  margin-top: -0.25rem;\n  --border-opacity: 1;\n  border-color: #e2e8f0;\n  border-color: rgba(226, 232, 240, var(--border-opacity));\n  border-width: 2px;\n  border-style: solid;\n}\n.avatar > span > img {\n  border-radius: 9999px;\n  width: 3rem;\n  height: 3rem;\n  --border-opacity: 1;\n  border-color: #f7fafc;\n  border-color: rgba(247, 250, 252, var(--border-opacity));\n  border-width: 2px;\n  border-style: solid;\n  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\n}\n", ""]);
+exports.push([module.i, ".links {\n  cursor: pointer;\n  font-weight: 700;\n  --text-opacity: 1;\n  color: #cbd5e0;\n  color: rgba(203, 213, 224, var(--text-opacity));\n  border-radius: 0.25rem;\n  padding: 0.5rem;\n  letter-spacing: 0.025em;\n  text-align: center;\n}\n.links:hover {\n  --text-opacity: 1;\n  color: #fff;\n  color: rgba(255, 255, 255, var(--text-opacity));\n  --bg-opacity: 1;\n  background-color: #a0aec0;\n  background-color: rgba(160, 174, 192, var(--bg-opacity));\n  border-radius: 0.25rem;\n  margin-bottom: 0.5rem;\n  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\n}\n.logo {\n  margin-left: 1.25rem;\n  margin-right: 1.25rem;\n  margin-bottom: 0.25rem;\n}\n.logo > img {\n  width: 3rem;\n  height: 3rem;\n  border-radius: 9999px;\n  margin-top: -0.25rem;\n  --border-opacity: 1;\n  border-color: #e2e8f0;\n  border-color: rgba(226, 232, 240, var(--border-opacity));\n  border-width: 2px;\n  border-style: solid;\n}\n.avatar > span > img {\n  border-radius: 9999px;\n  width: 2.5rem;\n  height: 2.5rem;\n  --border-opacity: 1;\n  border-color: #f7fafc;\n  border-color: rgba(247, 250, 252, var(--border-opacity));\n  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\n  border-width: 2px;\n  border-collapse: separate\n}\n", ""]);
 
 // exports
 
@@ -39877,7 +39877,7 @@ var staticRenderFns = [
           "span",
           {
             staticClass:
-              "text-gray-800 bg-white rounded-full h-12 w-12 flex items-center justify-center"
+              "text-gray-800 bg-white rounded-full h-10 w-10 flex items-center justify-center"
           },
           [
             _c("img", {
