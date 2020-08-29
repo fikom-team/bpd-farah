@@ -1,9 +1,5 @@
 <template>
-  <button
-    class="buttons"
-    @click.prevent="callback"
-    v-text="name"
-  />
+  <button class="buttons" @click.prevent="goTodetails" v-text="name" />
 </template>
 
 <script>
@@ -13,8 +9,17 @@ export default {
       type: String,
       default: "Buttons",
     },
-    callback: {
-      type: Function,
+    id: {
+      type: Number,
+    },
+  },
+
+  data() {
+    return {};
+  },
+  methods: {
+    goTodetails() {
+      this.$router.push({ name : 'Detail'  , params : {id : this.id} });
     },
   },
 };
@@ -35,7 +40,7 @@ export default {
   @apply from-blue-800;
   @apply text-white;
 }
-.buttons:focus { 
+.buttons:focus {
   @apply outline-none;
 }
 </style>
