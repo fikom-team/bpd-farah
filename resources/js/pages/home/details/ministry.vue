@@ -3,10 +3,22 @@
     <div class="header-label">
       <span>Detail Sasaran Strategis</span>
     </div>
-    <div class="flex mt-2">
+    <loader
+      v-if="isLoading"
+      object="#ff9633"
+      color1="#ffffff"
+      color2="#17fd3d"
+      size="5"
+      speed="2"
+      bg="#343a40"
+      objectbg="#999793"
+      opacity="80"
+      name="circular"
+    ></loader>
+    <div class="flex mt-2" v-if="!isLoading">
       <Card :contents="ministry" />
     </div>
-    <div class="detail-card">
+    <div class="detail-card" v-if="!isLoading">
       <Card-Detail :kementrian="ministry.kementrian" />
     </div>
   </div>
@@ -24,6 +36,7 @@ export default {
 
   data: () => ({
     ministry: {},
+    isLoading: false,
   }),
 
   beforeMount() {
@@ -32,9 +45,12 @@ export default {
   methods: {
     getDetailMinistry() {
       const { id } = this.$route.params;
-      Axios.get("/api/sp/" + id).then((res) => {
-        this.ministry = res.data.data;
-      });
+      this.isLoading = true;
+      Axios.get("/api/sp/" + id)
+        .then((res) => {
+          this.ministry = res.data.data;
+        })
+        .finally(() => (this.isLoading = false));
     },
   },
 };

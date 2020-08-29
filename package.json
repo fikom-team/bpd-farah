@@ -28,6 +28,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "vue-router": "^3.4.3"
+        "vue-router": "^3.4.3",
+        "vue-ui-preloader": "^1.1.0"
     }
 }
