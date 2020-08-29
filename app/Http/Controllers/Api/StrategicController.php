@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\StrategicTargetResource;
 use App\StrategicTarget;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -14,9 +15,11 @@ class StrategicController extends Controller
      * 
      * @return Response
      * @author luck_nut
+     * @return StrategicTargetResource 
      */
     public function index()
     {
+        return StrategicTargetResource::collection(StrategicTarget::all());
     }
 
     /**
@@ -28,6 +31,5 @@ class StrategicController extends Controller
      */
     public function show(StrategicTarget $strategicTarget)
     {
-
     }
 }
