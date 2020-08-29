@@ -49,7 +49,8 @@ export default {
 }
 
 .card {
-  @apply bg-gray-500;
+  @apply bg-gradient-to-r;
+  @apply from-gray-600;
   @apply h-full;
   @apply shadow-md;
   @apply rounded;

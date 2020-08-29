@@ -31,7 +31,8 @@ export default {
   @apply text-white;
 }
 .buttons:hover {
-  @apply bg-blue-700;
+  @apply bg-gradient-to-r;
+  @apply from-blue-800;
   @apply text-white;
 }
 .buttons:focus { 

@@ -2078,9 +2078,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {};
@@ -6650,7 +6647,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".buttons {\n  --bg-opacity: 1;\n  background-color: #63b3ed;\n  background-color: rgba(99, 179, 237, var(--bg-opacity));\n  border-radius: 0.25rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  width: 16rem;\n  font-weight: 700;\n  --text-opacity: 1;\n  color: #fff;\n  color: rgba(255, 255, 255, var(--text-opacity));\n}\n.buttons:hover {\n  --bg-opacity: 1;\n  background-color: #2b6cb0;\n  background-color: rgba(43, 108, 176, var(--bg-opacity));\n  --text-opacity: 1;\n  color: #fff;\n  color: rgba(255, 255, 255, var(--text-opacity));\n}\n.buttons:focus {\n  outline: 0;\n}\n", ""]);
+exports.push([module.i, ".buttons {\n  --bg-opacity: 1;\n  background-color: #63b3ed;\n  background-color: rgba(99, 179, 237, var(--bg-opacity));\n  border-radius: 0.25rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.5rem;\n  padding-bottom: 0.5rem;\n  width: 16rem;\n  font-weight: 700;\n  --text-opacity: 1;\n  color: #fff;\n  color: rgba(255, 255, 255, var(--text-opacity));\n}\n.buttons:hover {\n  background-image: linear-gradient(to right, var(--gradient-color-stops));\n  --gradient-from-color: #2c5282;\n  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(44, 82, 130, 0));\n  --text-opacity: 1;\n  color: #fff;\n  color: rgba(255, 255, 255, var(--text-opacity));\n}\n.buttons:focus {\n  outline: 0;\n}\n", ""]);
 
 // exports
 
@@ -6669,7 +6666,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".header[data-v-527a035d] {\n  padding: 0.75rem;\n}\n.top[data-v-527a035d] {\n  font-weight: 700;\n  --text-opacity: 1;\n  color: #fff;\n  color: rgba(255, 255, 255, var(--text-opacity));\n  text-align: center;\n  font-size: 1.125rem;\n}\n.content[data-v-527a035d] {\n  --bg-opacity: 1;\n  background-color: #fff;\n  background-color: rgba(255, 255, 255, var(--bg-opacity));\n  margin-left: 0.75rem;\n  margin-right: 0.75rem;\n  border-radius: 0.25rem;\n}\n.card[data-v-527a035d] {\n  --bg-opacity: 1;\n  background-color: #a0aec0;\n  background-color: rgba(160, 174, 192, var(--bg-opacity));\n  height: 100%;\n  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\n  border-radius: 0.25rem;\n}\n.footer[data-v-527a035d] {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem\n}\n.footer .flex .footer-title[data-v-527a035d] {\n  --text-opacity: 1;\n  color: #e2e8f0;\n  color: rgba(226, 232, 240, var(--text-opacity));\n  font-weight: 700;\n}\n", ""]);
+exports.push([module.i, ".header[data-v-527a035d] {\n  padding: 0.75rem;\n}\n.top[data-v-527a035d] {\n  font-weight: 700;\n  --text-opacity: 1;\n  color: #fff;\n  color: rgba(255, 255, 255, var(--text-opacity));\n  text-align: center;\n  font-size: 1.125rem;\n}\n.content[data-v-527a035d] {\n  --bg-opacity: 1;\n  background-color: #fff;\n  background-color: rgba(255, 255, 255, var(--bg-opacity));\n  margin-left: 0.75rem;\n  margin-right: 0.75rem;\n  border-radius: 0.25rem;\n}\n.card[data-v-527a035d] {\n  background-image: linear-gradient(to right, var(--gradient-color-stops));\n  --gradient-from-color: #718096;\n  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(113, 128, 150, 0));\n  height: 100%;\n  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\n  border-radius: 0.25rem;\n}\n.footer[data-v-527a035d] {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem\n}\n.footer .flex .footer-title[data-v-527a035d] {\n  --text-opacity: 1;\n  color: #e2e8f0;\n  color: rgba(226, 232, 240, var(--text-opacity));\n  font-weight: 700;\n}\n", ""]);
 
 // exports
 
@@ -38739,17 +38736,6 @@ var render = function() {
           [
             _c("router-link", { attrs: { to: { name: "home" } } }, [
               _vm._v("Home")
-            ])
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "span",
-          { staticClass: "links" },
-          [
-            _c("router-link", { attrs: { to: { name: "login" } } }, [
-              _vm._v("Login")
             ])
           ],
           1

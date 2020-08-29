@@ -6,9 +6,6 @@
         <a class="links">
           <router-link :to="{name : 'home'}">Home</router-link>
         </a>
-        <span class="links">
-          <router-link :to="{name : 'login'}">Login</router-link>
-        </span>
       </div>
       <div class="hidden sm:flex lg:flex avatar p-1 mr-2">
         <span
