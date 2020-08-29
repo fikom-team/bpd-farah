@@ -11,3 +11,7 @@
 
 # Basic Layouting
 ![alt](screenshoot/screen-1.png)
+
+## Home Screen
+
+![alt](screenshoot/screen-2.png)
