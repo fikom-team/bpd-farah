@@ -1,10 +1,14 @@
 <template>
   <div class="home">
+    <div class="header-label">
+      <span>Sasaran Strategis</span>
+    </div>
     <Layout-Card>
       <Card-Grids v-for="content in contents" :key="content.id">
         <Card :contents="content" />
       </Card-Grids>
     </Layout-Card>
+    <Loading />
   </div>
 </template>
 
@@ -12,8 +16,8 @@
 import Card from "../../components/molecules/Card";
 import LayoutCard from "../../utils/Layout-card";
 import CardGrids from "../../utils/Card-grids";
-
-import Axios from 'axios';
+import Loading from "../../components/atoms/loading";
+import Axios from "axios";
 
 export default {
   name: "Home",
@@ -21,6 +25,7 @@ export default {
     Card,
     LayoutCard,
     CardGrids,
+    Loading,
   },
   data: () => ({
     contents: [
@@ -54,9 +59,30 @@ export default {
         content: "content 5",
         footer: "footer 5",
       },
+      {
+        id: 6,
+        header: "header 5",
+        content: "content 5",
+        footer: "footer 5",
+      },
     ],
   }),
 };
 </script>
 
+
+<style scoped>
+.header-label {
+  @apply bg-gradient-to-r;
+  @apply from-gray-500;
+  @apply font-bold;
+  @apply mx-2;
+  @apply w-56;
+  @apply mt-12;
+  @apply p-2;
+  @apply rounded-tl-lg;
+  @apply tracking-wider;
+  @apply text-white;
+}
+</style>
 

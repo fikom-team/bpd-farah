@@ -1,9 +1,7 @@
 <template>
-  <div class="app">
-    <div class="main">
-      <Navbar />
-      <router-view></router-view>
-    </div>
+  <div class="main">
+    <Navbar />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -15,3 +13,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+  .main {
+    @apply px-12;
+  }
+</style>

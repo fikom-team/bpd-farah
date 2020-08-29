@@ -26,7 +26,7 @@ export default {
   @apply rounded;
   @apply px-4;
   @apply py-2;
-  @apply w-64;
+  @apply w-40;
   @apply font-bold;
   @apply text-white;
 }

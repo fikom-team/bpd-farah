@@ -5,8 +5,8 @@
       <span class="header content">{{contents.content}}</span>
       <span class="header footer">
         <div class="flex justify-between">
-           <span class="footer-title">Footer</span>
-          <Button name="Lihat" />
+          <span class="footer-title">Footer</span>
+          <Button name="Lihat" :callback="test" />
         </div>
       </span>
     </div>
@@ -27,6 +27,12 @@ export default {
   },
 
   data: () => ({}),
+
+  methods: {
+    test() {
+      console.log("tes");
+    },
+  },
 };
 </script>
 
@@ -53,15 +59,24 @@ export default {
   @apply from-gray-600;
   @apply h-full;
   @apply shadow-md;
-  @apply rounded;
+  @apply rounded-md;
+  @apply transition-all;
+  @apply duration-500;
+  @apply ease-in-out;
+}
+
+.card:hover {
+  @apply transform;
+  @apply -translate-x-2;
+  @apply scale-90 ;
 }
 
 .footer {
-  @apply mx-2
+  @apply mx-2;
 }
 
 .footer .flex .footer-title {
-    @apply text-gray-300;
-    @apply font-bold;
+  @apply text-gray-300;
+  @apply font-bold;
 }
 </style>
