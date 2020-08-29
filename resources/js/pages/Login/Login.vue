@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="login">
     <div class="flex justify-around">
       <div class="form mt-20">
         <Form>
@@ -32,6 +32,11 @@ export default {
       password: "",
     },
   }),
+
+  mounted() { 
+    console.log('component mounted');
+  },
+
   methods: {
     login() {
       alert('ini berhasil')

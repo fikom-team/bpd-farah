@@ -1,6 +1,6 @@
 <template>
   <button
-    class="bg-blue-400 hover:bg-blue-700 text-white font-bold w-64 py-2 px-4 rounded"
+    class="buttons"
     @click.prevent="callback"
     v-text="name"
   />
@@ -15,8 +15,26 @@ export default {
     },
     callback: {
       type: Function,
-      required: true,
     },
   },
 };
 </script>
+
+<style lang="css">
+.buttons {
+  @apply bg-blue-400;
+  @apply rounded;
+  @apply px-4;
+  @apply py-2;
+  @apply w-64;
+  @apply font-bold;
+  @apply text-white;
+}
+.buttons:hover {
+  @apply bg-blue-700;
+  @apply text-white;
+}
+.buttons:focus { 
+  @apply outline-none;
+}
+</style>
