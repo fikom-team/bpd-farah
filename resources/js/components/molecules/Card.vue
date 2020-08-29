@@ -1,11 +1,11 @@
 <template>
   <div class="card">
     <div class="flex flex-col">
-      <span class="header top">{{contents.header}}</span>
-      <span class="header content">{{contents.content}}</span>
+      <span class="header top">Sasaran Strategis</span>
+      <span class="header content">{{contents.name}}</span>
       <span class="header footer">
         <div class="flex justify-between">
-          <span class="footer-title">Footer</span>
+          <span class="footer-title">KODE : {{contents.kode}}</span>
           <Button name="Lihat" :callback="test" />
         </div>
       </span>
@@ -45,7 +45,8 @@ export default {
   @apply font-bold;
   @apply text-white;
   @apply text-center;
-  @apply text-lg;
+  @apply text-xl;
+  @apply tracking-wider;
 }
 
 .content {
