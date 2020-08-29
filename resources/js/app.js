@@ -4,6 +4,7 @@ require('./bootstrap');
 
 window.Vue = Vue;
 
+
 Vue.component('App', require('./App.vue').default);
 
 const app = new Vue({

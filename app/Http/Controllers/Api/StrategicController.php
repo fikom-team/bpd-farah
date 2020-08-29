@@ -31,5 +31,6 @@ class StrategicController extends Controller
      */
     public function show(StrategicTarget $strategicTarget)
     {
+        return StrategicTargetResource::make($strategicTarget);
     }
 }

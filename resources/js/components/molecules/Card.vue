@@ -6,7 +6,9 @@
       <span class="header footer">
         <div class="flex justify-between">
           <span class="footer-title">KODE : {{contents.kode}}</span>
-          <Button name="Lihat" :callback="test" />
+          <div v-if="isDetail">
+            <Button name="Lihat" :id="contents.id" />
+          </div>
         </div>
       </span>
     </div>
@@ -25,13 +27,14 @@ export default {
       type: Object,
     },
   },
+  data: () => ({
+    isDetail: false,
+  }),
 
-  data: () => ({}),
-
-  methods: {
-    test() {
-      console.log("tes");
-    },
+  beforeMount() {
+    if (this.$route.name == "home") {
+      this.isDetail = true;
+    }
   },
 };
 </script>
@@ -69,7 +72,7 @@ export default {
 .card:hover {
   @apply transform;
   @apply -translate-x-2;
-  @apply scale-90 ;
+  @apply scale-90;
 }
 
 .footer {
