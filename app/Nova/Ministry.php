@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Ministry extends Resource
@@ -42,13 +43,13 @@ class Ministry extends Resource
     public function fields(Request $request)
     {
         return [
-            
-            BelongsTo::make('Sasaran Strategis' , 'strategicTarget' , StrategicTarget::class),
+
+            BelongsTo::make('Sasaran Strategis', 'strategicTarget', StrategicTarget::class),
 
             Text::make('Kode IKU', 'kode_iku')
                 ->rules('required', 'string'),
 
-            Text::make('Nama', 'name')
+            Textarea::make('Nama', 'name')
                 ->rules('required', 'string'),
 
             Text::make('Target', 'target')

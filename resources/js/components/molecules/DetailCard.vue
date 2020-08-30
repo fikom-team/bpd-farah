@@ -1,23 +1,22 @@
 <template>
-  <div class="card">
-    <div class="flex flex-col">
-      <span class="header top">Level Kementrian</span>
-      <span class="header content">
-        <div class="mini-card">
-          <div class="flex mb-4">
-            <div class="w-1/3 bg-gray-400 h-full">
-              <div class="flex px-2">
-                <span>IKU-1</span>
-              </div>
+  <div class="detail-card">
+    <div class="header-label">
+      <span>Level Kementrian</span>
+    </div>
+    <div class="px-2 my-2">
+      <div class="flex flex-wrap -mx-2">
+        <div class="w-full lg:w-1/3 px-2 my-1" v-for="data in kementrian" :key="data.id">
+          <div class="card">
+            <div class="flex justify-between">
+              <span class="title">{{data.kode_iku}}</span>
+              <span class="title target">{{data.target}}</span>
+            </div>
+            <div class="card-box p-1">
+              <span class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, itaque at sed nam ipsum asperiores consectetur inventore deserunt veniam quo porro, fugiat unde numquam odio. Doloribus asperiores repudiandae eos aliquam!</span>
             </div>
           </div>
         </div>
-      </span>
-      <span class="header footer">
-        <div class="flex justify-between">
-          <span class="footer-title"></span>
-        </div>
-      </span>
+      </div>
     </div>
   </div>
 </template>
@@ -34,21 +33,24 @@ export default {
 </script>
 
 <style scoped>
-.header {
-  @apply p-3;
-}
-
-.top {
-  @apply font-bold;
+.title {
   @apply text-white;
-  @apply text-center;
-  @apply text-xl;
-  @apply tracking-wider;
+  @apply px-2;
+  @apply uppercase;
+  @apply font-bold;
+  @apply mt-2
 }
 
-.content {
-  @apply bg-white;
-  @apply mx-3;
+.target { 
+  @apply bg-gray-500;
+  @apply rounded-full;
+}
+
+.card-box {
+  @apply mt-2;
+  @apply mb-2;
+  @apply mx-2;
+  @apply bg-gray-400;
   @apply rounded;
 }
 
@@ -67,14 +69,5 @@ export default {
   @apply transform;
   @apply -translate-x-2;
   @apply scale-90;
-}
-
-.footer {
-  @apply mx-2;
-}
-
-.footer .flex .footer-title {
-  @apply text-gray-300;
-  @apply font-bold;
 }
 </style>

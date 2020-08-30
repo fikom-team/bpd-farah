@@ -2079,7 +2079,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     kementrian: {
@@ -6967,7 +6966,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".header[data-v-12bbc30e] {\n  padding: 0.75rem;\n}\n.top[data-v-12bbc30e] {\n  font-weight: 700;\n  --text-opacity: 1;\n  color: #fff;\n  color: rgba(255, 255, 255, var(--text-opacity));\n  text-align: center;\n  font-size: 1.25rem;\n  letter-spacing: 0.05em;\n}\n.content[data-v-12bbc30e] {\n  --bg-opacity: 1;\n  background-color: #fff;\n  background-color: rgba(255, 255, 255, var(--bg-opacity));\n  margin-left: 0.75rem;\n  margin-right: 0.75rem;\n  border-radius: 0.25rem;\n}\n.card[data-v-12bbc30e] {\n  background-image: linear-gradient(to right, var(--gradient-color-stops));\n  --gradient-from-color: #718096;\n  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(113, 128, 150, 0));\n  height: 100%;\n  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\n  border-radius: 0.375rem;\n  transition-property: all;\n  transition-duration: 500ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n.card[data-v-12bbc30e]:hover {\n  --transform-translate-x: 0;\n  --transform-translate-y: 0;\n  --transform-rotate: 0;\n  --transform-skew-x: 0;\n  --transform-skew-y: 0;\n  --transform-scale-x: 1;\n  --transform-scale-y: 1;\n  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));\n  --transform-translate-x: -0.5rem;\n  --transform-scale-x: .9;\n  --transform-scale-y: .9;\n}\n.footer[data-v-12bbc30e] {\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n}\n.footer .flex .footer-title[data-v-12bbc30e] {\n  --text-opacity: 1;\n  color: #e2e8f0;\n  color: rgba(226, 232, 240, var(--text-opacity));\n  font-weight: 700;\n}\n", ""]);
+exports.push([module.i, ".title[data-v-12bbc30e] {\n  --text-opacity: 1;\n  color: #fff;\n  color: rgba(255, 255, 255, var(--text-opacity));\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n  text-transform: uppercase;\n  font-weight: 700;\n  margin-top: 0.5rem\n}\n.target[data-v-12bbc30e] {\n  --bg-opacity: 1;\n  background-color: #a0aec0;\n  background-color: rgba(160, 174, 192, var(--bg-opacity));\n  border-radius: 9999px;\n}\n.card-box[data-v-12bbc30e] {\n  margin-top: 0.5rem;\n  margin-bottom: 0.5rem;\n  margin-left: 0.5rem;\n  margin-right: 0.5rem;\n  --bg-opacity: 1;\n  background-color: #cbd5e0;\n  background-color: rgba(203, 213, 224, var(--bg-opacity));\n  border-radius: 0.25rem;\n}\n.card[data-v-12bbc30e] {\n  background-image: linear-gradient(to right, var(--gradient-color-stops));\n  --gradient-from-color: #718096;\n  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(113, 128, 150, 0));\n  height: 100%;\n  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\n  border-radius: 0.375rem;\n  transition-property: all;\n  transition-duration: 500ms;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n.card[data-v-12bbc30e]:hover {\n  --transform-translate-x: 0;\n  --transform-translate-y: 0;\n  --transform-rotate: 0;\n  --transform-skew-x: 0;\n  --transform-skew-y: 0;\n  --transform-scale-x: 1;\n  --transform-scale-y: 1;\n  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));\n  --transform-translate-x: -0.5rem;\n  --transform-scale-x: .9;\n  --transform-scale-y: .9;\n}\n", ""]);
 
 // exports
 
@@ -39746,34 +39745,57 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "detail-card" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "px-2 my-2" }, [
+      _c(
+        "div",
+        { staticClass: "flex flex-wrap -mx-2" },
+        _vm._l(_vm.kementrian, function(data) {
+          return _c(
+            "div",
+            { key: data.id, staticClass: "w-full lg:w-1/3 px-2 my-1" },
+            [
+              _c("div", { staticClass: "card" }, [
+                _c("div", { staticClass: "flex justify-between" }, [
+                  _c("span", { staticClass: "title" }, [
+                    _vm._v(_vm._s(data.kode_iku))
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "title target" }, [
+                    _vm._v(_vm._s(data.target))
+                  ])
+                ]),
+                _vm._v(" "),
+                _vm._m(1, true)
+              ])
+            ]
+          )
+        }),
+        0
+      )
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "flex flex-col" }, [
-        _c("span", { staticClass: "header top" }, [_vm._v("Level Kementrian")]),
-        _vm._v(" "),
-        _c("span", { staticClass: "header content" }, [
-          _c("div", { staticClass: "mini-card" }, [
-            _c("div", { staticClass: "flex mb-4" }, [
-              _c("div", { staticClass: "w-1/3 bg-gray-400 h-full" }, [
-                _c("div", { staticClass: "flex px-2" }, [
-                  _c("span", [_vm._v("IKU-1")])
-                ])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("span", { staticClass: "header footer" }, [
-          _c("div", { staticClass: "flex justify-between" }, [
-            _c("span", { staticClass: "footer-title" })
-          ])
-        ])
+    return _c("div", { staticClass: "header-label" }, [
+      _c("span", [_vm._v("Level Kementrian")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-box p-1" }, [
+      _c("span", { staticClass: "text-justify" }, [
+        _vm._v(
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, itaque at sed nam ipsum asperiores consectetur inventore deserunt veniam quo porro, fugiat unde numquam odio. Doloribus asperiores repudiandae eos aliquam!"
+        )
       ])
     ])
   }

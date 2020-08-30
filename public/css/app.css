@@ -22059,6 +22059,12 @@ body {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

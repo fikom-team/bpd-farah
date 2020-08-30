@@ -24,3 +24,8 @@ body {
     @apply tracking-wider;
     @apply text-white;
   }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
