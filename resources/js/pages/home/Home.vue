@@ -53,10 +53,12 @@ export default {
      */
     fetchStrategisData() {
       this.isLoading = true;
-      console.log(this.isLoading);
-      const res = axios.get("/api/sp").then((res) => {
-        this.strategisData = res.data.data;
-      }).finally(() => this.isLoading = false);
+      const res = axios
+        .get("/api/sp")
+        .then((res) => {
+          this.strategisData = res.data.data;
+        })
+        .finally(() => (this.isLoading = false));
     },
   },
 };

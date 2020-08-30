@@ -2086,9 +2086,7 @@ __webpack_require__.r(__webpack_exports__);
       Type: Array
     }
   },
-  mounted: function mounted() {
-    console.log(this.kementrian);
-  }
+  mounted: function mounted() {}
 });
 
 /***/ }),
@@ -2203,12 +2201,10 @@ __webpack_require__.r(__webpack_exports__);
       }
     };
   },
-  mounted: function mounted() {
-    console.log('component mounted');
-  },
+  mounted: function mounted() {},
   methods: {
     login: function login() {
-      alert('ini berhasil');
+      alert("ini berhasil");
     }
   }
 });
@@ -2284,7 +2280,6 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.isLoading = true;
-      console.log(this.isLoading);
       var res = axios__WEBPACK_IMPORTED_MODULE_3___default.a.get("/api/sp").then(function (res) {
         _this.strategisData = res.data.data;
       })["finally"](function () {

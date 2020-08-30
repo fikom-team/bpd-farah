@@ -29,9 +29,7 @@ export default {
       Type: Array,
     },
   },
-  mounted() {
-    console.log(this.kementrian);
-  },
+  mounted() {},
 };
 </script>
 

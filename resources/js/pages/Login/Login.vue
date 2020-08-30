@@ -33,13 +33,11 @@ export default {
     },
   }),
 
-  mounted() { 
-    console.log('component mounted');
-  },
+  mounted() {},
 
   methods: {
     login() {
-      alert('ini berhasil')
+      alert("ini berhasil");
     },
   },
 };
