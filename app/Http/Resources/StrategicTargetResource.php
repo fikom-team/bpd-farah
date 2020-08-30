@@ -19,6 +19,7 @@ class StrategicTargetResource extends JsonResource
             'kode'  => $this->kode,
             'name'  => $this->name,
             'kementrian' => MinistryResource::collection($this->ministrys),
+            'programTarget' => ProgramTargetResource::collection($this->programTargets)
         ];
     }
 }
